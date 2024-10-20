@@ -43,7 +43,7 @@
 }
 
 @keyframes open {
-  from {
+  0% {
     opacity: 0;
     display: none;
   }
@@ -52,14 +52,14 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  to {
+  100% {
     opacity: 1;
     display: flex;
   }
 }
 
 @keyframes close {
-  from {
+  0% {
     opacity: 1;
     display: flex;
   }
@@ -68,7 +68,7 @@
     background-color: rgba(255, 255, 255, 0);
   }
 
-  to {
+  100% {
     opacity: 0;
     display: none;
   }
