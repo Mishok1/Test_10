@@ -1,0 +1,20 @@
+@use '../common/variables.scss';
+
+.title {
+  font-family: "BebasNeue-Bold", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: #0B64FE;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$desktop-width) {
+    font-family: "Ubuntu-Light", sans-serif;
+    font-size: 62px;
+    font-weight: 300;
+    line-height: 62px;
+    text-align: left;
+    text-transform: none;
+  }
+}

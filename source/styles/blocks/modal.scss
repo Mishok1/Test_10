@@ -1,0 +1,41 @@
+@use '../common/variables.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+
+  &--close {
+    display: none;
+  }
+}
+
+.modal__wrapper {
+  padding: 24px 16px;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #ffffff;
+  position: relative;
+  margin: auto;
+  width: 280px;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 456px;
+  }
+}
+
+.modal__description {
+  margin: 0;
+}
+
+.modal__badge {
+  color: #e30a0a;
+  text-align: center;
+  font-size: 30px;
+  margin: 14px 0 0;
+}

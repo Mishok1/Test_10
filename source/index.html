@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Table</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <main>
+    <section class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__title title">Эргономика — ключ к успеху современного человека</h1>
+        <p class="hero__description">Cтильная столешница , выполненной из экологически безопасного материала (ДСП), и
+          усиленной стальной рамы не составит труда разместить на поверхности инновационного стола большое количество
+          крупногабаритной техники: стол выдерживает нагрузку до 80 кг.</p>
+        <div class="hero__wrapper">
+          <picture>
+            <source type="image/webp" srcset="images/table@1x.webp 1x, images/table@2x.webp 2x" width="332"
+              height="144">
+            <img class="hero__image hero__image1" src="images/table@1x.jpg" srcset="images/table@2x.jpg 2x" width="503"
+              height="335" alt="Стол.">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="images/legs@1x.webp 1x, images/legs@2x.webp 2x" width="332" height="144">
+            <img class="hero__image hero__image2" src="images/legs@1x.jpg" srcset="images/legs@2x.jpg 2x" width="503"
+              height="335" alt="Ножки стола.">
+          </picture>
+          <button id="upButton" class="hero__button" type="button">вверх</button>
+          <button id="downButton" class="hero__button" type="button">вниз</button>
+        </div>
+        <p class="hero__description">Также столешница, обладающая меламиновым покрытием, хорошо переносит механические
+          воздействия (царапины или удары), при контакте с водой не разрушается, устойчиво переносит бытовые химические
+          вещества и не выгорает под воздействием ультрафиолета.</p>
+      </div>
+    </section>
+  </main>
+  <div id="modal" class="modal">
+    <div id="modal-wrapper" class="modal__wrapper">
+      <p class="modal__description">При удержании кнопки в течение 1-ой секунды происходит прокрутка до минимального или
+        максимального значения. Клик по кнопке приведёт к смещению стола на один шаг (1px)</p>
+      <p class="modal__badge">Развлекайтесь!</p>
+    </div>
+  </div>
+</body>
+
 </html>

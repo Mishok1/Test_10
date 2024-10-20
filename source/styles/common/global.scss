@@ -1,1 +1,38 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+@use "../common/variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27.2px;
+  color: #181818;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 22px;
+    line-height: 37.4px;
+  }
+}
+
+img {
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+picture {
+  display: contents;
+}
