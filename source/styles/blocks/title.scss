@@ -1,4 +1,4 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .title {
   font-family: "BebasNeue-Bold", sans-serif;
@@ -6,7 +6,7 @@
   font-weight: 700;
   line-height: 38px;
   text-align: left;
-  color: #0B64FE;
+  color: #0b64fe;
   text-transform: uppercase;
 
   @media (min-width: variables.$desktop-width) {
