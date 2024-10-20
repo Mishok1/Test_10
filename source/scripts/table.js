@@ -1,4 +1,4 @@
-const table = document.querySelector('.hero__image1');
+const table = document.querySelector('.hero__image--table');
 const upButton = document.querySelector('#up-button');
 const downButton = document.querySelector('#down-button');
 let maxLength = -28;
@@ -53,7 +53,6 @@ downButton.addEventListener('click', () => {
   buttonsStateControl();
 });
 
-// debugger;
 downButton.addEventListener('mousedown', () => holdHandler(downButton, minLength, 'mouseup'));
 
 upButton.addEventListener('mousedown', () => holdHandler(upButton, maxLength, 'mouseup'));
